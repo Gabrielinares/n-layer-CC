@@ -23,6 +23,8 @@ namespace layer.access.Repositories
         {
             try
             {
+                await _dbcontext.SaveChangesAsync();
+
                 return await _dbcontext.Set<TModel>().ToListAsync();
             }
             catch
@@ -30,5 +32,34 @@ namespace layer.access.Repositories
                 throw;
             }
         }
+
+        public async Task<TModel> AddEmpleado(TModel model)
+        {
+            try
+            {
+                _dbcontext.Add(model);
+                _dbcontext.SaveChanges();
+                return model;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public async Task<TModel> EditEmpleado(TModel model)
+        {
+            try
+            {
+                _dbcontext.Update(model);
+                _dbcontext.SaveChanges();
+                return model;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
     }
 }

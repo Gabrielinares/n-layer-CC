@@ -11,5 +11,7 @@ namespace layer.business.Services.Contracts
     public interface IEmpleadoServicio
     {
         Task<List<Empleado>> GetEmpleados();
+
+        Task<Empleado> AddEmpleado(Empleado empleado);
     }
 }

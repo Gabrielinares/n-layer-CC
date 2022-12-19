@@ -30,5 +30,17 @@ namespace layer.business.Services
                 throw;
             }
         }
+
+        public async Task<Empleado> AddEmpleado(Empleado empleado)
+        {
+            try
+            {
+                return await _repository.AddEmpleado(empleado);
+            }
+            catch 
+            {
+                throw;
+            }
+        }
     }
 }

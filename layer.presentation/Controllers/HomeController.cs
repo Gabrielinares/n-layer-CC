@@ -32,6 +32,19 @@ namespace layer.presentation.Controllers
             return View(listEmpleados);
         }
 
+        public IActionResult VAddEmpleado()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> AddEmpleado([FromForm]Empleado empleado)
+        {
+            await _empleadoServicio.AddEmpleado(empleado);
+            return View("mostrarEmpleados");
+        }
+
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

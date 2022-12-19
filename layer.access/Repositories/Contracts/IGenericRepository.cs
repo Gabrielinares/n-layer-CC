@@ -1,4 +1,5 @@
-﻿using System;
+﻿using layer.access.models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,11 @@ namespace layer.access.Repositories.Contracts
 {
     public interface IGenericRepository<TModel> where TModel : class
     {
-        Task<IEnumerable<TModel>> GetEmpleados();    
+        Task<IEnumerable<TModel>> GetEmpleados();
+
+        Task<TModel> AddEmpleado(TModel model);
+
+        Task<TModel> EditEmpleado(TModel model);
+
     }
 }
