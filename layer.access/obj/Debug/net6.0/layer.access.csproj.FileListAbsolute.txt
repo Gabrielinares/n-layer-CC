@@ -1,0 +1,14 @@
+D:\VS\NLayerCC\layer.access\bin\Debug\net6.0\layer.access.deps.json
+D:\VS\NLayerCC\layer.access\bin\Debug\net6.0\layer.access.runtimeconfig.json
+D:\VS\NLayerCC\layer.access\bin\Debug\net6.0\layer.access.dll
+D:\VS\NLayerCC\layer.access\bin\Debug\net6.0\layer.access.pdb
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\layer.access.csproj.AssemblyReference.cache
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\layer.access.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\layer.access.AssemblyInfoInputs.cache
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\layer.access.AssemblyInfo.cs
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\layer.access.csproj.CoreCompileInputs.cache
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\layer.access.dll
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\refint\layer.access.dll
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\layer.access.pdb
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\layer.access.genruntimeconfig.cache
+D:\VS\NLayerCC\layer.access\obj\Debug\net6.0\ref\layer.access.dll

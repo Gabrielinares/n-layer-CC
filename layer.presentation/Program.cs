@@ -1,7 +1,22 @@
+using layer.access.DataContext;
+using layer.access.Repositories;
+using layer.access.Repositories.Contracts;
+using layer.business.Services;
+using layer.business.Services.Contracts;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<TestDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Sql"));
+});
+
+builder.Services.AddTransient(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+builder.Services.AddScoped<IEmpleadoServicio, EmpleadoServicio>();
 
 var app = builder.Build();
 
