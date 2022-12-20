@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 using layer.business.Services.Contracts;
 using layer.access.models;
+using Microsoft.EntityFrameworkCore;
 
 namespace layer.presentation.Controllers
 {
