@@ -15,6 +15,8 @@ namespace layer.access.Repositories.Contracts
 
         Task<TModel> EditEmpleado(TModel model);
 
+        Task<Empleado> EliminarEmpleado(int id);
+
         Task<Empleado> GetEmpleadoId(int id);
     }
 }

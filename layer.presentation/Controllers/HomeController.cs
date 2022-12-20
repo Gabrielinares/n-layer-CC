@@ -55,6 +55,16 @@ namespace layer.presentation.Controllers
             return View( "Details" ,await _empleadoServicio.GetEmpleadoId(id));
         }
 
+        public async Task<IActionResult> GetEmpleadoAEliminar(int id)
+        {
+            return View("View", await _empleadoServicio.GetEmpleadoId(id));
+        }
+
+        public async Task<IActionResult> EliminarEmp(int id)
+        {
+            await _empleadoServicio.EliminarEmpleado(id);
+            return Redirect("~/Home/mostrarEmpleados");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -61,6 +61,26 @@ namespace layer.access.Repositories
             }
         }
 
+        public async Task<Empleado> EliminarEmpleado(int id)
+        {
+            try
+            {
+                Empleado e = await _dbcontext.Empleados.FirstOrDefaultAsync(m => m.IdEmpleado == id);
+
+                if (e != null)
+                {
+                    _dbcontext.Empleados.Remove(e);
+                    _dbcontext.SaveChanges();
+                }
+
+                return e;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         public async Task<Empleado> GetEmpleadoId(int id)
         {
             try

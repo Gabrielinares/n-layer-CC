@@ -55,6 +55,17 @@ namespace layer.business.Services
             }
         }
 
+        public async Task<Empleado> EliminarEmpleado(int id)
+        {
+            try
+            {
+                return await _repository.EliminarEmpleado(id);
+            }
+            catch
+            {
+                throw;
+            }
+        }
         public async Task<Empleado> GetEmpleadoId(int id)
         {
             try
