@@ -41,7 +41,13 @@ namespace layer.presentation.Controllers
         public async Task<IActionResult> AddEmpleado([FromForm]Empleado empleado)
         {
             await _empleadoServicio.AddEmpleado(empleado);
-            return View("mostrarEmpleados");
+            return Redirect("mostrarEmpleados");
+        }
+
+        public async Task<IActionResult> EditEmpleado([FromForm] Empleado empleado)
+        {
+            await _empleadoServicio.EditEmpleado(empleado);
+            return Redirect("mostrarEmpleados");
         }
 
         public async Task<IActionResult> GetEmpleadoId(int id)

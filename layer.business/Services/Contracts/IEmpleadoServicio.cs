@@ -14,6 +14,8 @@ namespace layer.business.Services.Contracts
 
         Task<Empleado> AddEmpleado(Empleado empleado);
 
+        Task<Empleado> EditEmpleado(Empleado empleado);
+        
         Task<Empleado> GetEmpleadoId(int id);
     }
 }

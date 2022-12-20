@@ -43,6 +43,18 @@ namespace layer.business.Services
             }
         }
 
+        public async Task<Empleado> EditEmpleado(Empleado empleado)
+        {
+            try
+            {
+                return await _repository.EditEmpleado(empleado);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         public async Task<Empleado> GetEmpleadoId(int id)
         {
             try
