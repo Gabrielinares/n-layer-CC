@@ -13,5 +13,7 @@ namespace layer.business.Services.Contracts
         Task<List<Empleado>> GetEmpleados();
 
         Task<Empleado> AddEmpleado(Empleado empleado);
+
+        Task<Empleado> GetEmpleadoId(int id);
     }
 }

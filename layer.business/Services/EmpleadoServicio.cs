@@ -42,5 +42,17 @@ namespace layer.business.Services
                 throw;
             }
         }
+
+        public async Task<Empleado> GetEmpleadoId(int id)
+        {
+            try
+            {
+                return await _repository.GetEmpleadoId(id);
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

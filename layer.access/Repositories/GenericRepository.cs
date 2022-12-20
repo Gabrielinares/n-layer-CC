@@ -47,13 +47,11 @@ namespace layer.access.Repositories
             }
         }
 
-        public async Task<TModel> EditEmpleado(TModel model)
+        public async Task<Empleado> GetEmpleadoId(int id)
         {
             try
             {
-                _dbcontext.Update(model);
-                _dbcontext.SaveChanges();
-                return model;
+                return await _dbcontext.Empleados.FirstOrDefaultAsync(m => m.IdEmpleado == id);
             }
             catch
             {

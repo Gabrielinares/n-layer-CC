@@ -44,6 +44,10 @@ namespace layer.presentation.Controllers
             return View("mostrarEmpleados");
         }
 
+        public async Task<IActionResult> GetEmpleadoId(int id)
+        {
+            return View( "Details" ,await _empleadoServicio.GetEmpleadoId(id));
+        }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
