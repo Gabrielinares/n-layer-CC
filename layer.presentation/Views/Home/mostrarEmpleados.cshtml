@@ -1,0 +1,59 @@
+﻿@model IEnumerable<layer.access.models.Empleado>
+
+@{
+    ViewData["Title"] = "Ver todos los empleados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Listado de empleados</h1>
+
+<p>
+    <a asp-action="VAddEmpleado">Agregar nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "GetEmpleadoId", new {  id=item.IdEmpleado  }, new { @class = "btn btn-warning" }) |
+                    @Html.ActionLink("Delete", "GetEmpleadoAEliminar", new {  id=item.IdEmpleado  }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,15 @@
+D:\VS\NLayerCC\layer.business\bin\Debug\net6.0\layer.business.deps.json
+D:\VS\NLayerCC\layer.business\bin\Debug\net6.0\layer.business.dll
+D:\VS\NLayerCC\layer.business\bin\Debug\net6.0\layer.business.pdb
+D:\VS\NLayerCC\layer.business\bin\Debug\net6.0\layer.access.dll
+D:\VS\NLayerCC\layer.business\bin\Debug\net6.0\layer.access.pdb
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\layer.business.csproj.AssemblyReference.cache
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\layer.business.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\layer.business.AssemblyInfoInputs.cache
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\layer.business.AssemblyInfo.cs
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\layer.business.csproj.CoreCompileInputs.cache
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\layer.business.csproj.CopyComplete
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\layer.business.dll
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\refint\layer.business.dll
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\layer.business.pdb
+D:\VS\NLayerCC\layer.business\obj\Debug\net6.0\ref\layer.business.dll
